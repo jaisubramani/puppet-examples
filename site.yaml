@@ -1,0 +1,7 @@
+---
+nginx::availability_zone: 'west'
+nginx::dns_servers:
+  - 8.8.8.8
+  - 8.8.4.4
+  - dns.localdomain
+nginx::log_level: 'debug'

@@ -1,5 +1,5 @@
 .vagrant
-puppet/modules/*
-!puppet/modules/lamp
-!puppet/modules/nginx
-!puppet/modules/users
+modules/*
+!modules/lamp
+!modules/nginx
+!modules/users

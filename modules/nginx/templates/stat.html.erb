@@ -1,0 +1,20 @@
+<html>
+  <head>
+     <title>Hello from Puppet!</title>
+  </head>
+  <body>
+    <h1>Hello World, Puppet is Fun!</h1>
+    <h2>Welcome to <%= @hostname %></h2>
+    <p>My IP address is: <%= @ipaddress %></p>
+    <p>My uptime is: <%= @uptime_seconds %> seconds.</p>
+    <p>This is a <%= @osfamily %> system.</p>
+    <p>The availability zone is <%= @availability_zone %>.</p>
+    <p>The log level is <%= @log_level %>.</p>
+    <p>List of dns servers:</p>
+      <%- if @dns_servers -%>
+        <%- @dns_servers.each do |key| -%>
+          <%= key %>
+        <%- end -%>
+      <%- end -%>
+  </body>
+</html>

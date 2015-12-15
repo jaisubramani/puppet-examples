@@ -1,4 +1,4 @@
-# to run: cd /vagrant && sudo puppet apply -e "include nginx" --modulepath=/vagrant/modules
+# define nginx class
 class nginx (
   $availability_zone,
   $dns_servers = [],
